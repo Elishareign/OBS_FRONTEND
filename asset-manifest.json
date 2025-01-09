@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OBS_FRONTEND/static/css/main.456531fa.css",
-    "main.js": "/OBS_FRONTEND/static/js/main.ad018d8a.js",
+    "main.js": "/OBS_FRONTEND/static/js/main.89b8629e.js",
     "static/media/room.jpg": "/OBS_FRONTEND/static/media/room.c28ad3a9208e9d700eb1.jpg",
     "static/media/c.jpg": "/OBS_FRONTEND/static/media/c.55a03759f59b512cc3d9.jpg",
     "static/media/hotelroom.jpg": "/OBS_FRONTEND/static/media/hotelroom.15400bd2793b961a04cd.jpg",
@@ -27,10 +27,10 @@
     "static/media/fa-v4compatibility.woff2": "/OBS_FRONTEND/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/OBS_FRONTEND/index.html",
     "main.456531fa.css.map": "/OBS_FRONTEND/static/css/main.456531fa.css.map",
-    "main.ad018d8a.js.map": "/OBS_FRONTEND/static/js/main.ad018d8a.js.map"
+    "main.89b8629e.js.map": "/OBS_FRONTEND/static/js/main.89b8629e.js.map"
   },
   "entrypoints": [
     "static/css/main.456531fa.css",
-    "static/js/main.ad018d8a.js"
+    "static/js/main.89b8629e.js"
   ]
 }
