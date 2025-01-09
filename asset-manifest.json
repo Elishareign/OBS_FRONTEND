@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/OBS_FRONTEND/static/css/main.456531fa.css",
+    "main.js": "/OBS_FRONTEND/static/js/main.ad018d8a.js",
+    "static/media/room.jpg": "/OBS_FRONTEND/static/media/room.c28ad3a9208e9d700eb1.jpg",
+    "static/media/c.jpg": "/OBS_FRONTEND/static/media/c.55a03759f59b512cc3d9.jpg",
+    "static/media/hotelroom.jpg": "/OBS_FRONTEND/static/media/hotelroom.15400bd2793b961a04cd.jpg",
+    "static/media/Hbg.jpeg": "/OBS_FRONTEND/static/media/Hbg.fd4785cf17e1ceaa8cd8.jpeg",
+    "static/media/rooms.jpg": "/OBS_FRONTEND/static/media/rooms.0d286815c6194d5d9e51.jpg",
+    "static/media/roomsbg.png": "/OBS_FRONTEND/static/media/roomsbg.d1ef11bd9e9a1ce62b67.png",
+    "static/media/dining.png": "/OBS_FRONTEND/static/media/dining.38f0256ba876dfa497e8.png",
+    "static/media/fbg.jpg": "/OBS_FRONTEND/static/media/fbg.16c35c571a0f500f2945.jpg",
+    "static/media/fa-solid-900.ttf": "/OBS_FRONTEND/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/bg2.png": "/OBS_FRONTEND/static/media/bg2.8a9a5910d9f41914342a.png",
+    "static/media/spa.jpg": "/OBS_FRONTEND/static/media/spa.8f2185a76e792ad1d7c0.jpg",
+    "static/media/bg.png": "/OBS_FRONTEND/static/media/bg.44f11f38f811e05b9c11.png",
+    "static/media/gym.jpg": "/OBS_FRONTEND/static/media/gym.6371e1dd6a60d2405824.jpg",
+    "static/media/fa-brands-400.ttf": "/OBS_FRONTEND/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/OBS_FRONTEND/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/OBS_FRONTEND/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/profile.jpg": "/OBS_FRONTEND/static/media/profile.8cc8731c9048349881cf.jpg",
+    "static/media/fa-regular-400.ttf": "/OBS_FRONTEND/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/elysiangold.png": "/OBS_FRONTEND/static/media/elysiangold.50ec1177e85d01b7733f.png",
+    "static/media/elysianwhite.png": "/OBS_FRONTEND/static/media/elysianwhite.315ace9bf23f1c8d7faf.png",
+    "static/media/fa-regular-400.woff2": "/OBS_FRONTEND/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/OBS_FRONTEND/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/OBS_FRONTEND/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/OBS_FRONTEND/index.html",
+    "main.456531fa.css.map": "/OBS_FRONTEND/static/css/main.456531fa.css.map",
+    "main.ad018d8a.js.map": "/OBS_FRONTEND/static/js/main.ad018d8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.456531fa.css",
+    "static/js/main.ad018d8a.js"
+  ]
+}
