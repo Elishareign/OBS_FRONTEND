@@ -11,8 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-
+    <Router basename="/OBS_FRONTEND"> {/* Set the base path here */}
       <Routes>
         {/* Home Page */}
         <Route
@@ -57,6 +56,7 @@ function App() {
             </>
           }
         />
+
         <Route path="/selectRoom" element={<SelectRoom />} />
         <Route path="/bookingForm" element={<BookingForm />} />
       </Routes>
