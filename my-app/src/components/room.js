@@ -76,7 +76,7 @@ function Room() {
               </div>
             </div>
           </div>
-          {/* Repeat room-card for other rooms */}
+          {/* Repeat room-card for other room */}
           <div className="room-card">
           <img src={roomImage} alt="Room" />
             <div className="card-details">
