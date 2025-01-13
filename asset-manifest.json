@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/OBS_FRONTEND/static/css/main.456531fa.css",
-    "main.js": "/OBS_FRONTEND/static/js/main.89b8629e.js",
+    "main.css": "/OBS_FRONTEND/static/css/main.c22d3fd8.css",
+    "main.js": "/OBS_FRONTEND/static/js/main.9414ba37.js",
     "static/media/room.jpg": "/OBS_FRONTEND/static/media/room.c28ad3a9208e9d700eb1.jpg",
     "static/media/c.jpg": "/OBS_FRONTEND/static/media/c.55a03759f59b512cc3d9.jpg",
-    "static/media/hotelroom.jpg": "/OBS_FRONTEND/static/media/hotelroom.15400bd2793b961a04cd.jpg",
     "static/media/Hbg.jpeg": "/OBS_FRONTEND/static/media/Hbg.fd4785cf17e1ceaa8cd8.jpeg",
     "static/media/rooms.jpg": "/OBS_FRONTEND/static/media/rooms.0d286815c6194d5d9e51.jpg",
     "static/media/roomsbg.png": "/OBS_FRONTEND/static/media/roomsbg.d1ef11bd9e9a1ce62b67.png",
@@ -19,18 +18,23 @@
     "static/media/fa-solid-900.woff2": "/OBS_FRONTEND/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/fa-brands-400.woff2": "/OBS_FRONTEND/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/profile.jpg": "/OBS_FRONTEND/static/media/profile.8cc8731c9048349881cf.jpg",
+    "static/media/roomss.jpg": "/OBS_FRONTEND/static/media/roomss.5ce50169a4172727cc10.jpg",
     "static/media/fa-regular-400.ttf": "/OBS_FRONTEND/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/wifi-icon.png": "/OBS_FRONTEND/static/media/wifi-icon.76761401d27d9aa36bcd.png",
     "static/media/elysiangold.png": "/OBS_FRONTEND/static/media/elysiangold.50ec1177e85d01b7733f.png",
     "static/media/elysianwhite.png": "/OBS_FRONTEND/static/media/elysianwhite.315ace9bf23f1c8d7faf.png",
+    "static/media/chair-icon.png": "/OBS_FRONTEND/static/media/chair-icon.78d1f7e2ab16d1695b84.png",
     "static/media/fa-regular-400.woff2": "/OBS_FRONTEND/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/tv-icon.png": "/OBS_FRONTEND/static/media/tv-icon.82a76c6535a237b1d72e.png",
+    "static/media/bathroom-icon.png": "/OBS_FRONTEND/static/media/bathroom-icon.f619c0e81230b151d382.png",
     "static/media/fa-v4compatibility.ttf": "/OBS_FRONTEND/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/OBS_FRONTEND/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/OBS_FRONTEND/index.html",
-    "main.456531fa.css.map": "/OBS_FRONTEND/static/css/main.456531fa.css.map",
-    "main.89b8629e.js.map": "/OBS_FRONTEND/static/js/main.89b8629e.js.map"
+    "main.c22d3fd8.css.map": "/OBS_FRONTEND/static/css/main.c22d3fd8.css.map",
+    "main.9414ba37.js.map": "/OBS_FRONTEND/static/js/main.9414ba37.js.map"
   },
   "entrypoints": [
-    "static/css/main.456531fa.css",
-    "static/js/main.89b8629e.js"
+    "static/css/main.c22d3fd8.css",
+    "static/js/main.9414ba37.js"
   ]
 }
