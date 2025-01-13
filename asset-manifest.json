@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/OBS_FRONTEND/static/css/main.c22d3fd8.css",
-    "main.js": "/OBS_FRONTEND/static/js/main.9414ba37.js",
+    "main.js": "/OBS_FRONTEND/static/js/main.a94a1268.js",
     "static/media/room.jpg": "/OBS_FRONTEND/static/media/room.c28ad3a9208e9d700eb1.jpg",
     "static/media/c.jpg": "/OBS_FRONTEND/static/media/c.55a03759f59b512cc3d9.jpg",
+    "static/media/hotelroom.jpg": "/OBS_FRONTEND/static/media/hotelroom.15400bd2793b961a04cd.jpg",
     "static/media/Hbg.jpeg": "/OBS_FRONTEND/static/media/Hbg.fd4785cf17e1ceaa8cd8.jpeg",
     "static/media/rooms.jpg": "/OBS_FRONTEND/static/media/rooms.0d286815c6194d5d9e51.jpg",
     "static/media/roomsbg.png": "/OBS_FRONTEND/static/media/roomsbg.d1ef11bd9e9a1ce62b67.png",
@@ -31,10 +32,10 @@
     "static/media/fa-v4compatibility.woff2": "/OBS_FRONTEND/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/OBS_FRONTEND/index.html",
     "main.c22d3fd8.css.map": "/OBS_FRONTEND/static/css/main.c22d3fd8.css.map",
-    "main.9414ba37.js.map": "/OBS_FRONTEND/static/js/main.9414ba37.js.map"
+    "main.a94a1268.js.map": "/OBS_FRONTEND/static/js/main.a94a1268.js.map"
   },
   "entrypoints": [
     "static/css/main.c22d3fd8.css",
-    "static/js/main.9414ba37.js"
+    "static/js/main.a94a1268.js"
   ]
 }
