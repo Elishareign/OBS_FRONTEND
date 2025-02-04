@@ -1,470 +1,181 @@
-.facilities-container {   
-  width: 100vw;
-  height: 100vh;
-  background-image: url('../assets/fbg.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
-  animation: fadeIn 0.5s ease-in-out;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-  h1 {
-  color: white; 
-  font-size: 3.5rem; 
-  font-family: "Poppins", sans-serif;
-  margin: 0; 
-  font-weight: 700;
+  .facilities-container {   
+    width: auto;
+    height: 100vh;
+    background-image: url('../assets/fbg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
   
-}
-
-  h3 {
-  color: white;
-  font-size: 1.2rem; 
-  font-family: "Poppins", sans-serif;
-  margin: 10px 0 0 0; 
-  font-weight: 400; 
-  line-height: 1.5; 
-  max-width: 700px; 
-}
-
-.arrow {
-  width: 30px;
-  height: 30px;
-  border-left: 10px solid white;
-  border-bottom: 10px solid white;
-  transform: rotate(315deg); /* Creates the arrow shape */
-  margin: 150px auto 0; /* Centers the arrow and adds spacing above */
-}
-
-.scroll-down-icon {
-  font-size: 100px;
-  cursor: pointer;
-  position: absolute;
-  margin-bottom: 120px;
-  bottom: 20px; 
-  left: 50%;
-  transform: translate(-50%, 0); 
-  color: #B79347;
-  transition: transform 0.3s ease, color 0.3s ease;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+    h1 {
+    color: white; 
+    font-size: 3.5rem; 
+    font-family: "Poppins", sans-serif;
+    margin: 0; 
+    font-weight: 700;
+    
   }
-  40% {
-    transform: translateY(-10px);
+
+    h3 {
+    color: white;
+    font-size: 1.2rem; 
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0 0 0; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    max-width: 700px; 
   }
-  60% {
-    transform: translateY(-5px);
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
+    transform: rotate(315deg); /* Creates the arrow shape */
+    margin: 150px auto 0; /* Centers the arrow and adds spacing above */
   }
-}
 
-.facilities-details-section {
-  background-color: white;
-  text-align: center;
-  margin-top: 180px;
-  height: 90vh;
-  animation: slideIn 1s ease-in-out;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
+  .scroll-down-icon {
+    font-size: 100px;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: 120px;
+    bottom: 20px; 
+    left: 50%;
+    transform: translate(-50%, 0); 
+    color: #B79347;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: bounce 1.5s infinite;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
   }
-}
-
-.facilities-details-section h2 {
-  font-size: 40px;
-  color: #050A30;
-  transition: color 0.3s ease;
-}
-
-.facilities-details-section h2:hover {
-  color: #B79347;
-}
-
-.facilities-details-section p {
-  font-size: 20px;
-  color: #555;
-}
-
-.luxury-room-text .book-now-btn { 
-  display: flex;
-  background-color: #c79b45;
-  margin-left: 20rem;
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Poppins';
-  width: 138px;
-  text-align: center;
-}
-
-.book-now-btn:hover {
-  background-color: #af8740;
-}
-.luxury-room-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 30px;
-  margin-top: 50px;
-  background-color: #f8f8f8;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  width: 80%;
-  margin-left: 14rem;
-}
-
-.luxury-room-section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.luxury-room-image {
-  width: 50%;
-  max-width: 600px;
-  border-radius: 10px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.luxury-room-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.luxury-room-text {
-  text-align: left;
-  max-width: 500px;
-  animation: fadeInRight 1s ease-in-out;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  
+  .facilities-details-section {
+    width: auto;
+    height: auto;
+    background-color: white;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    animation: slideIn 1s ease-in-out;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .facilities-details-section h2 {
+    margin-top: -100px;
+    font-size: 40px;
+    color: #c79b45;
+    font-family: Raleway;
+    font-weight: normal;
+    transition: color 0.3s ease;
   }
-}
 
-.luxury-room-text h3 {
-  font-size: 30px;
-  color: #B79347;
-  margin-bottom: 15px;
-  transition: color 0.3s ease;
-}
-
-.luxury-room-text h3:hover {
-  color: #050A30;
-}
-
-.luxury-room-text p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #333;
-  transition: transform 0.3s ease;
-}
-
-.luxury-room-text p:hover {
-  transform: translateX(10px);
-}
-
-.gym-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  margin-top: 50px;
-  background-color: #B79347;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  width: 80%;
-  margin-left: 14rem;
-}
-
-.gym-section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.gym-image {
-  width: 50%;
-  max-width: 600px;
-  border-radius: 10px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.gym-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.gym-text {
-  text-align: left;
-  max-width: 500px;
-  animation: fadeInRight 1s ease-in-out;
-}
-
-.gym-section .book-now-btn-gym {
-  display: flex;
-  background-color: white;
-  margin-left: 20rem;
-  color: #B79347;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Poppins';
-  width: 138px;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.book-now-btn-gym:hover {
-  background-color: #dddddd;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  .facilities-details-section p {
+    font-size: 18px;
+    margin-top: -10px;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .facilities-details-section button {
+    font-size: 16px;
+    background-color: #c79b45;
+    border-radius: 32px;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 110px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   }
-}
 
-.gym-text h3 {
-  font-size: 30px;
-  color: white;
-  margin-bottom: 15px;
-  transition: color 0.3s ease;
-}
+  .book-here-link {
+    color: #c79b45;
+    cursor: pointer;
+  }  
 
-.gym-text h3:hover {
-  color: #050A30;
-}
-
-.gym-text p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: white;
-  transition: transform 0.3s ease;
-}
-
-.gym-text p:hover {
-  transform: translateX(10px);
-}
-
-.spa-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  margin-top: 50px;
-  background-color: #f8f8f8;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  width: 80%;
-  margin-left: 14rem;
-}
-
-.spa-section .book-now-btn-spa {
-  display: flex;
-  background-color: #c79b45;
-  margin-left: 20rem;
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Poppins';
-  width: 138px;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.book-now-btn-spa{
-display: flex;
-  background-color: #c79b45;
-  margin-left: 20rem;
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Poppins';
-  width: 138px;
-  text-align: center;
-}
-
-.spa-section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.spa-image {
-  width: 50%;
-  max-width: 600px;
-  border-radius: 10px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.spa-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.spa-text {
-  text-align: left;
-  max-width: 500px;
-  animation: fadeInRight 1s ease-in-out;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  .facilities-grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .facility-item {
+    margin-bottom: 150px;
+    display: flex;
+    position: relative;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Ensure both elements span the full width */
+    background-color: transparent;
+    overflow: visible;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
   }
-}
 
-.spa-text h3 {
-  font-size: 30px;
-  color: #B79347;
-  margin-bottom: 15px;
-  transition: color 0.3s ease;
-}
-
-.spa-text h3:hover {
-  color: #050A30;
-}
-
-.spa-text p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #B79347;
-  transition: transform 0.3s ease;
-}
-
-.spa-text p:hover {
-  transform: translateX(10px);
-}
-
-.dining-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
-  margin-top: 50px;
-  background-color: #B79347;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  margin-bottom: 100px;
-  width: 80%;
-  margin-left: 14rem;
-}
-
-.dining-section .book-now-btn-dining {
-  display: flex;
-  background-color: white;
-  margin-left: 20rem;
-  color: #B79347;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Poppins';
-  width: 138px;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.dining-section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.dining-image {
-  width: 50%;
-  max-width: 600px;
-  border-radius: 10px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.dining-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.dining-text {
-  text-align: left;
-  max-width: 500px;
-  animation: fadeInRight 1s ease-in-out;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  .facility-image {
+    position: relative; /* Ensure the image stays within the parent */
+    z-index: 1; /* Set the image below the text */
+  }  
+  
+  .facility-image img {
+    width: 1200px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .facility-text {
+    background-image: url('../assets/facilityDescBG.png'); 
+    background-size: cover; 
+    background-position: top;
+    background-repeat: no-repeat; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Place the text over the image */
+    top: 0; /* Align it to the top of the container */
+    left: 0;
+    height: auto;
+    width: 50%; /* Take the full width of the container */
+    border-radius: 16px;
+    color: white; /* Text color */
+    padding: 20px;
+    z-index: 2; /* Ensure text appears above the image */
+    margin-left: 455px;
+    margin-top: 330px;
   }
-}
-
-.dining-text h3 {
-  font-size: 30px;
-  color: white;
-  margin-bottom: 15px;
-  transition: color 0.3s ease;
-}
-
-.dining-text h3:hover {
-  color: #050A30;
-}
-
-.dining-text p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: white;
-  transition: transform 0.3s ease;
-}
-
-.dining-text p:hover {
-  transform: translateX(10px);
-}
+  
+  .facility-text h3 {
+    font-size: 22px;
+    color: #a37e3c;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .facility-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }

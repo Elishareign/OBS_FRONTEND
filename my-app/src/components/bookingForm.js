@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./bookingForm.css";
 import Navbar from "./navbar";
+import roomImageCheck from "../assets/roomss.jpg";
+import LogInModal from "./logInModal";
 
 const BookingForm = () => {
   const getTodayDate = () => {
@@ -36,8 +38,19 @@ const BookingForm = () => {
   const [checkIn, setCheckIn] = useState(location.state?.checkIn || getTodayDate());
   const [checkOut, setCheckOut] = useState(location.state?.checkOut || getTomorrowDate(getTodayDate()));
   const [persons, setPersons] = useState(location.state?.persons || 2);
-  
-  const [paymentMethod, setPaymentMethod] = React.useState("visa");
+  const [paymentMethod, setPaymentMethod] = useState("visa");
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  const [isModalVisible, setModalVisible] = useState(!isLoggedIn); 
+  const { name, price, image, details } = location.state || {};
+  const { roomOrFacility } = location.state || {};
+
+  if (!roomOrFacility) {
+    return;
+  }
+
+  const closeModal = () => {
+    setModalVisible(false);
+  }; 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -63,8 +76,18 @@ const BookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Check if the user is logged in
+    if (!isLoggedIn) {
+      alert("Please log in to proceed with your booking.");
+      setModalVisible(true);
+      return;
+    }
+  
+    // Destructure guest information fields
     const { firstName, lastName, phone, email, address, city, zipCode } = guestInfo;
-
+  
+    // Validate guest information fields
     if (!firstName || !lastName || !phone || !email || !address || !city || !zipCode) {
       alert("All fields marked with * are required.");
       return;
@@ -104,6 +127,21 @@ const BookingForm = () => {
   return (
     <div>
       <Navbar />
+      {!isLoggedIn && (
+        <LogInModal isVisible={isModalVisible} onClose={closeModal}>
+          <h2>Welcome to Our Booking Page!</h2>
+          <p>Please log in to continue your booking.</p>
+          <button
+            className="login-button"
+            onClick={() => {
+              setIsLoggedIn(true);
+              setModalVisible(false);
+            }}
+          >
+            Log In
+          </button>
+        </LogInModal>
+      )}
       <div className="bookingForm-container">
         <div className="bf-bg">
           <div className="details-container-form">
@@ -158,8 +196,10 @@ const BookingForm = () => {
         
         <div className="book-form">
           <div className="form-text">Complete Booking</div>
+          <div className="row-container">
           <div className="info-container">
             <h3>Guest Information</h3>
+            <p>Please fill us these Information to finish booking</p>
             <div className="form-grid">
               <div>
                 <label>First Name</label>
@@ -209,59 +249,44 @@ const BookingForm = () => {
                   required
                 />
               </div>
-              <div>
-                <label>Country</label>
-                <select name="country" value={guestInfo.country} onChange={handleInputChange} required>
-                  <option value="">Select Country</option>
-                  {["Philippines", "USA", "Canada"].map((country, index) => (
-                    <option key={index} value={country}>
-                      {country}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label>Address</label>
-                <input
-                  type="text"
-                  name="address"
-                  value={guestInfo.address}
-                  onChange={handleInputChange}
-                  placeholder="Address"
-                  maxLength="200"
-                  required
-                />
-              </div>
-              <div>
-                <label>City</label>
-                <input
-                  type="text"
-                  name="city"
-                  value={guestInfo.city}
-                  onChange={handleInputChange}
-                  placeholder="City"
-                  maxLength="100"
-                  required
-                />
-              </div>
-              <div>
-                <label>Zip Code</label>
-                <input
-                  type="text"
-                  name="zipCode"
-                  value={guestInfo.zipCode}
-                  onChange={handleInputChange}
-                  placeholder="XXXX"
-                  maxLength="5"
-                  required
-                />
-              </div>
             </div>
           </div>
+          <div class="booking-card">
+            <div class="card-content">
+              <img
+                src={roomOrFacility.image}
+                alt={roomOrFacility.name}
+                className="booking-image"
+              />
+              <div className="room-rate-card">
+                <span className="room-title-card">{roomOrFacility.name}</span>
+                <span className="room-price-card">{roomOrFacility.price} PHP</span>
+              </div>
+              <p class="room-details-card">
+                {checkIn} - {checkOut}<br />{persons} persons
+              </p>
+              <div class="charges-card">
+                <div class="charge-item-card">
+                  <span>Taxes and Fees</span>
+                  <span>1,500</span>
+                </div>
+                <div class="charge-item-card">
+                  <span>Service Charge</span>
+                  <span>500</span>
+                </div>
+              </div>
+              <hr />
+              <div class="total-card">
+                <span>Total</span>
+                <span>6,500</span>
+              </div>
+              <p class="subtotal-card">PHP Subtotal</p>
+            </div>
+          </div>
+       </div>
 
           <div className="payment-container">
           <h3>Payment</h3>
-
           <div className="payment-method">
             <div className="payment-method-group">
               <input
@@ -281,7 +306,12 @@ const BookingForm = () => {
                   <input 
                     type="text" 
                     name="cardNumber" 
-                    placeholder="XXXX-XXXX-XXXX-XXXX" 
+                    placeholder="XXXX-XXXX-XXXX-XXXX"
+                    maxLength="16"
+                    inputMode="numeric"
+                    pattern="\d*"
+                    onInput={(e) => (e.target.value = e.target.value.replace(/\D/g, ""))}
+                    required
                   />
                 </div>
                 <div className="expiration-row">
@@ -316,7 +346,11 @@ const BookingForm = () => {
                   <input 
                     type="text"
                     name="nameOnCard" 
-                    placeholder="Cardholder Name" 
+                    placeholder="Cardholder Name"
+                    maxLength="50"
+                    pattern="^[a-zA-Z\s]*$" // Allows only alphabets and spaces
+                    onInput={(e) => (e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, ""))}
+                    required
                   />
                 </div>
                 <div>
@@ -324,7 +358,12 @@ const BookingForm = () => {
                   <input 
                     type="text" 
                     name="cvv" 
-                    placeholder="XXX" 
+                    placeholder="XXX"
+                    maxLength="3"
+                    inputMode="numeric"
+                    pattern="\d*"
+                    onInput={(e) => (e.target.value = e.target.value.replace(/\D/g, ""))}
+                    required
                   />
                 </div>
               </div>
@@ -350,7 +389,12 @@ const BookingForm = () => {
                   <input 
                     type="text" 
                     name="gcashNumber" 
-                    placeholder="XXXX-XXX-XXXX" 
+                    placeholder="XXXX-XXX-XXXX"
+                    maxLength="11"
+                    inputMode="numeric"
+                    pattern="\d*"
+                    onInput={(e) => (e.target.value = e.target.value.replace(/\D/g, ""))}
+                    required 
                   />
                 </div>
               </div>
@@ -358,10 +402,23 @@ const BookingForm = () => {
           </div>
         </div>
 
+        <div className="rules-container">
+        <h3>Kids Stay Free</h3>
+        <p>A maximum of 2 children aged 12 and below stay free of charge per room if they share the same bed with adults.</p>
+        <h3>Cancellation Policy</h3>
+        <p>Cancellations must be made at least 24 hours before the scheduled check-in time (typically 3:00 PM on the check-in date) 
+          to avoid penalties. If a booking is canceled after the specified cancellation deadline, a cancellation fee will apply. 
+          If the guest does not show up for the reservation and fails to cancel in advance, a no-show fee will be charged, which 
+          may be equivalent to the full cost of the first night’s stay.</p>
+        </div>
 
-          <button type="submit" onClick={handleSubmit}>
-            Submit
-          </button>
+        <button 
+          type="submit" 
+          className="submit-button" 
+          onClick={handleSubmit}>
+          Book Now
+        </button>
+
         </div>
       </div>
     </div>

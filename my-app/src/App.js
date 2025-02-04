@@ -6,12 +6,14 @@ import Facilities from './components/facilities';
 import Room from './components/room';
 import Contact from './components/contact';
 import SelectRoom from './components/selectRoom';
+import SelectFacility from './components/selectFacility';
 import BookingForm from './components/bookingForm';
 import './App.css';
 
 function App() {
   return (
-    <Router basename="/OBS_FRONTEND"> {/* Set the base path here */}
+    <Router>
+
       <Routes>
         {/* Home Page */}
         <Route
@@ -56,8 +58,8 @@ function App() {
             </>
           }
         />
-
         <Route path="/selectRoom" element={<SelectRoom />} />
+        <Route path="/selectFacility" element={<SelectFacility />} />
         <Route path="/bookingForm" element={<BookingForm />} />
       </Routes>
     </Router>
